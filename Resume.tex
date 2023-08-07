@@ -1,0 +1,204 @@
+%-------------------------
+% Resume in Latex
+% Author : Trevor Trinh
+% Edited : 2023-08-06
+%------------------------
+
+% Document setup
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+% Page style setup
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\arraystretch}{0.9}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+% URL style
+\urlstyle{same}
+
+% Layout adjustments
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% PDF settings for machine readability
+\pdfgentounicode=1
+
+
+%-------------------------
+% Custom commands
+
+% Bullet point styles
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% Start and end commands for lists
+\newcommand{\subHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\subHeadingListEnd}{\end{itemize}}
+\newcommand{\itemListStart}{\begin{itemize}}
+\newcommand{\itemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%----------
+% Section heading
+\newcommand{\sectionHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Job subheading
+\newcommand{\jobSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \textbf{\small#2} \\
+      {\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Header for each experience: \experienceHeader{Name}{Date}{Role}{Location}
+\newcommand{\experienceHeader}[4]{
+  \jobSubheading{#1}{#2}{#3}{#4}
+  \itemListStart
+}
+
+%----------
+% Description bullet for each experience: \experienceItem{Description}
+\newcommand{\experienceItem}[1]{
+  \descriptionItem{#1}
+}
+
+% Individual description item
+\newcommand{\descriptionItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+%----------
+% Education entry: \education{Institution}{Grad Date}{Degree}{GPA or Details}{Certifications}
+\newcommand{\education}[5]{
+  \sectionHeading{#1}{#2}
+    \item\footnotesize{
+      \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#3} & #4 \\
+        #5 & \\
+      \end{tabular*}\vspace{-5pt}
+    }
+}
+
+% Coursework entry: \coursework{Courses}
+\newcommand{\coursework}[1]{
+  \sectionHeading{Relevant Coursework}{}
+  \descriptionItem{#1}
+}
+
+% Skills entry: \skills{Technical Skills}{Software and Paradigms}
+\newcommand{\skills}[2]{
+  \sectionHeading{Skills}{}
+  \descriptionItem{\textit{Technical Skills} - #1}
+  \vspace{-7pt}
+  \descriptionItem{\textit{Software \& Paradigms} - #2}
+}
+
+% Main document content begins here
+\begin{document}
+
+\begin{center}
+    \textbf{\huge \scshape Trevor Trinh} \\
+    \vspace{1pt}
+    \small (***) ***-**** {\tiny{$\bullet$}} \href{mailto:trevortrinh@berkeley.edu}{trevortrinh@berkeley.edu} \\
+    \href{https://linkedin.com/in/trevortrinh}{linkedin.com/in/trevortrinh} {\tiny{$\bullet$}} \href{https://github.com/trevor-trinh}{github.com/trevor-trinh} {\tiny{$\bullet$}} \href{https://trevz.me}{trevz.me}
+
+\end{center}
+
+\vspace{-15pt}
+
+\section{\textbf{EDUCATION AND SKILLS}}
+  \subHeadingListStart
+    \education{University of California, Berkeley}{May 2025}{Bachelor's in Computer Science, Minor in Philosophy}{GPA: 3.79}{Certifications in Entrepreneurship \& Technology, CompTIA Security+, Blockchain Technology}
+    \coursework{Discrete Mathematics and Probability Theory, Data Structures \& Algorithms, Advanced Algorithms, Structure and Interpretation of Computer Programs, Information Devices and Systems I/II, Machine Structures, Leadership, Finance, Engineering Economics}
+    \skills{JavaScript (TypeScript/React/RN/Node/Next.js), Python, Solidity, Java, C, SQL, MongoDB, AWS, Firebase}{Docker, Linux, Figma, Cybersecurity, AI, Cloud, Web/Mobile Development, Distributed Systems}
+
+  \subHeadingListEnd
+    
+\section{\textbf{PROFESSIONAL EXPERIENCE}}
+  \subHeadingListStart
+    \experienceHeader{Yahoo!}{June 2023 - August 2023}{Software Engineer - Ads Analytics}{Mountain View, CA}
+      \experienceItem{Redesigned 'One Reporting' UI to React, improving user satisfaction by 40\% and reducing report creation time by 50\%}
+      \experienceItem{Implemented comprehensive testing with Jest, increasing code coverage by 30\%. Led the development of a scheduling REST API using Scala on AWS microservices, integrated with Redux \& RTK Query}
+      \experienceItem{Enhanced the ads ecosystem by analyzing data and understanding business needs of DSP and SSP}
+    \itemListEnd
+    
+    \experienceHeader{SylphAI}{August 2022 - November 2022}{Software Engineer}{Remote}
+      \experienceItem{Led the development of a full-stack MVP using React ChakraUI, AWS serverless backend, and GraphQL, increasing user satisfaction by 50\% and reducing query errors by 60\% as measured by AWS performance insights}
+      \experienceItem{Served as the first technical hire at SylphAI, supporting the onboarding of over 300 AI professionals during industry-wide layoffs and leading hiring interview processes}
+    \itemListEnd
+    
+    \experienceHeader{Kodely}{July 2022 - September 2022}{Cybersecurity Education Consultant}{Berkeley, CA}
+      \experienceItem{Developed an 8+ week cybersecurity curriculum, now adopted by 22 K-12 institutions, emphasizing cyber hygiene and best practices}
+      \experienceItem{Designed sandboxed vulnerabilities in React \& Express, such as SQL \& command injection, achieving a 95\% faster deployment using Docker}
+    \itemListEnd
+    
+  \subHeadingListEnd
+    
+\section{\textbf{PROJECTS AND LEADERSHIP}}
+  \subHeadingListStart
+    \experienceHeader{One Dollar Summer LLC - statpass.app}{May 2023 - Present}{Co-founder \& Developer}{Berkeley, CA}
+      \experienceItem{Co-founded and spearheaded the development of statpass, a specialized app enriching UC Berkeley students' engagement with intramural sports. Led a team of 8, fostering collaboration, agile development, and deployment to the Apple store}
+      \experienceItem{Leveraged Expo (React Native), Firebase, and Algolia to develop the platform, enhancing the user experience for over 17,000 users}
+    \itemListEnd
+    
+    \experienceHeader{Blockchain @ Berkeley}{February 2023 - Present}{Developer Consultant}{Berkeley, CA}
+      \experienceItem{Led team to 1st place at Franklin Templeton Blockchain contest, \$7,000 funding for 'SimpliSpend', a decentralized reimbursement token system for UC Berkeley. Developed with Solidity, Hardhat, Plaid, MongoDB, Tailwind and Next.js}
+      \experienceItem{Achieved 1st place finish at LionHacks, securing 8,000 in funding, built DEX aggregator \& cross-chain governance deployer}
+      \experienceItem{Active delegate for on-chain governance, engaged in Defi \& Rollups, Starkware, AAVE, Euler, Compound, and Uniswap}
+    \itemListEnd
+    
+    \experienceHeader{Codeology @ Berkeley}{August 2022 - Present}{Industry Director, Project Leader}{Berkeley, CA}
+      \experienceItem{Launched the bearchainAI project, guiding students through a 12-week blockchain/AI program, creating a full-stack web app utilizing OpenAI's GPT-3 DaVinci to generate NFT short stories}
+      \experienceItem{Played a pivotal role in organizing career fairs with industry leaders like IMC, Skydeck, and Rivian, successfully raising over \$10,000 in funding}
+    \itemListEnd
+    
+    \experienceHeader{Web Development @ Berkeley}{August 2022 - Present}{Project Manager, Industry Developer}{Berkeley, CA}
+      \experienceItem{Directed a diverse 14-member team to craft an AI tool for interior design, achieving an astounding 98\% furniture removal accuracy using technologies like Stable Diffusion, LlamaClean, and CV2 for AI room generation and wall segmentation}
+      \experienceItem{Raised over \$16,000 in project funding by acquiring high-growth health/design startups as development clientele}
+    \itemListEnd
+    
+  \subHeadingListEnd
+    
+\end{document}
+    

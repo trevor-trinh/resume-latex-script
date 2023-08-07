@@ -1,0 +1,96 @@
+{
+    "name": "Trevor Trinh",
+    "phone": "(***) ***-****",
+    "email": "trevortrinh@berkeley.edu",
+    "linkedin": "linkedin.com/in/trevortrinh",
+    "github": "github.com/trevor-trinh",
+    "website": "trevz.me",
+    "education": {
+        "institution": "University of California, Berkeley",
+        "grad_date": "May 2025",
+        "degree": "Bachelor's in Computer Science, Minor in Philosophy",
+        "gpa": "3.79",
+        "certifications": "Certifications in Entrepreneurship & Technology, CompTIA Security+, Blockchain Technology"
+    },
+    "coursework": "Discrete Mathematics and Probability Theory, Data Structures & Algorithms, Advanced Algorithms, Structure and Interpretation of Computer Programs, Information Devices and Systems I/II, Machine Structures, Leadership, Finance, Engineering Economics",
+    "skills": {
+        "technical": "JavaScript (TypeScript/React/RN/Node/Next.js), Python, Solidity, Java, C, SQL, MongoDB, AWS, Firebase",
+        "software": "Docker, Linux, Figma, Cybersecurity, AI, Cloud, Web/Mobile Development, Distributed Systems"
+    },
+    "experiences": [
+        {
+            "name": "Yahoo!",
+            "date": "June 2023 - August 2023",
+            "role": "Software Engineer - Ads Analytics",
+            "location": "Mountain View, CA",
+            "descriptions": [
+                "Redesigned 'One Reporting' UI to React, improving user satisfaction by 40% and reducing report creation time by 50%",
+                "Implemented comprehensive testing with Jest, increasing code coverage by 30%. Led the development of a scheduling REST API using Scala on AWS microservices, integrated with Redux & RTK Query",
+                "Enhanced the ads ecosystem by analyzing data and understanding business needs of DSP and SSP"
+            ]
+        },
+        {
+            "name": "SylphAI",
+            "date": "August 2022 - November 2022",
+            "role": "Software Engineer",
+            "location": "Remote",
+            "descriptions": [
+                "Led the development of a full-stack MVP using React ChakraUI, AWS serverless backend, and GraphQL, increasing user satisfaction by 50% and reducing query errors by 60% as measured by AWS performance insights",
+                "Served as the first technical hire at SylphAI, supporting the onboarding of over 300 AI professionals during industry-wide layoffs and leading hiring interview processes"
+            ]
+        },
+        {
+            "name": "Kodely",
+            "date": "July 2022 - September 2022",
+            "role": "Cybersecurity Education Consultant",
+            "location": "Berkeley, CA",
+            "descriptions": [
+                "Developed an 8+ week cybersecurity curriculum, now adopted by 22 K-12 institutions, emphasizing cyber hygiene and best practices",
+                "Designed sandboxed vulnerabilities in React & Express, such as SQL & command injection, achieving a 95% faster deployment using Docker"
+            ]
+        }
+    ],
+    "projectsAndLeadership": [
+        {
+            "name": "One Dollar Summer LLC - statpass.app",
+            "date": "May 2023 - Present",
+            "role": "Co-founder & Developer",
+            "location": "Berkeley, CA",
+            "descriptions": [
+                "Co-founded and spearheaded the development of statpass, a specialized app enriching UC Berkeley students' engagement with intramural sports. Led a team of 8, fostering collaboration, agile development, and deployment to the Apple store",
+                "Leveraged Expo (React Native), Firebase, and Algolia to develop the platform, enhancing the user experience for over 17,000 users"
+            ]
+        },
+        {
+            "name": "Blockchain @ Berkeley",
+            "date": "February 2023 - Present",
+            "role": "Developer Consultant",
+            "location": "Berkeley, CA",
+            "descriptions": [
+                "Led team to 1st place at Franklin Templeton Blockchain contest, $7,000 funding for 'SimpliSpend', a decentralized reimbursement token system for UC Berkeley. Developed with Solidity, Hardhat, Plaid, MongoDB, Tailwind and Next.js",
+                "Achieved 1st place finish at LionHacks, securing 8,000 in funding, built DEX aggregator & cross-chain governance deployer",
+                "Active delegate for on-chain governance, engaged in Defi & Rollups, Starkware, AAVE, Euler, Compound, and Uniswap"
+            ]
+        },
+        {
+            "name": "Codeology @ Berkeley",
+            "date": "August 2022 - Present",
+            "role": "Industry Director, Project Leader",
+            "location": "Berkeley, CA",
+            "descriptions": [
+                "Launched the bearchainAI project, guiding students through a 12-week blockchain/AI program, creating a full-stack web app utilizing OpenAI's GPT-3 DaVinci to generate NFT short stories",
+                "Played a pivotal role in organizing career fairs with industry leaders like IMC, Skydeck, and Rivian, successfully raising over $10,000 in funding"
+            ]
+        },
+        {
+            "name": "Web Development @ Berkeley",
+            "date": "August 2022 - Present",
+            "role": "Project Manager, Industry Developer",
+            "location": "Berkeley, CA",
+            "descriptions": [
+                "Directed a diverse 14-member team to craft an AI tool for interior design, achieving an astounding 98% furniture removal accuracy using technologies like Stable Diffusion, LlamaClean, and CV2 for AI room generation and wall segmentation",
+                "Raised over $16,000 in project funding by acquiring high-growth health/design startups as development clientele"
+            ]
+        }
+    ]
+}
